@@ -1,0 +1,15 @@
+{% assign person = include.person %}
+<div class="flexcol">
+  <div class="profile-card">
+    <div class="profile-body">
+      <div class="profile-image">
+        <a href="{{person.url}}">{% asset 'nptechs/{{ person.title | slugify: 'latin' }}.jpg' %}</a>
+      </div>
+      <div class="profile-text">
+          <h4><a href="{{person.url}}">{{ person.firstname | capitalize }} {{ person.lastname | capitalize}}</a></h4>
+          <h5>{{person.category }}</h5>
+          <p>{{ person.skills }}</p>
+      </div>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,12 @@
+<div class="row">
+{% assign team = (site.team | where: "current-team", "true") | sort: "first_name" %}
+{% for person in team %}
+  <div class="col-lg-3 col-md-3 col-sm-3 col-xs-12 block-center text-center">
+    <div class="icon-push">
+      <a href="{{ site.baseurl }}{{ person.url }}"><img src="{{ site.baseurl }}/img/team/{{ person.main-image.small }}" class="img-responsive icon major stylebg img-circle" /></a>
+    </div>
+    <h4>{{ person.first_name }} {{ person.last_name }}</h4>
+    <p><small>{{ person.position }}</small></p>
+  </div>
+{% endfor %}
+</div>

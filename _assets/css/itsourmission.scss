@@ -1,0 +1,48 @@
+---
+---
+$lg-device: 		1200px;
+$desktop: 			992px;
+$tablet: 			768px;
+$mobile: 			480px;
+$font-headers: 		'Fjalla One', sans-serif;
+$body-bg: 			#f2f2f2;
+$black: 			#000000;
+$donate-background: #67CF48;
+$white: 			#ffffff;
+$link-color: 		#1589C9;
+$secondary-color:	#43484f;
+$border-color: 		#e7e7e7;
+
+$profile-header-bg: #eeeeee;
+
+$profile-card-bg: 	#f9f9f9;
+$profile-card-border: #cccccc;
+
+// social colors
+$website:			#67CF48;
+$facebook: 			#3b5998;
+$twitter: 			#1da1f2;
+$youtube: 			#ff0000;
+$instagram: 		#c32aa3;
+$linkedin: 			#007bb5;
+$github:			#171515;
+$wordpress:			#67CF48;
+
+
+// Vendors
+@import 'vendor/bootstrap';
+
+// Components
+@import 'components/navigation';
+@import 'components/footer';
+@import 'components/jumbobox';
+@import 'components/breadcrumb';
+@import 'components/profiles';
+@import 'components/profile_detail';
+
+// Pages
+@import 'pages/homepage';
+
+
+// Base
+@import 'components/global';

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    {% include head.html %}
+</head>
+<body class="{% if page.parent %}{{ page.parent }}{% endif %} {% if page.title %}{{ page.title | downcase | replace: ' ', '-' | replace: '/', '-' }}{% endif %}">
+<!-- [begin] the navigation -->
+{% include analytics.html %}
+<!-- [end] the navigation -->
+
+<!-- [begin] the navigation -->
+{% include mainmenu.html %}
+<!-- [end] the navigation -->
+
+<!-- [begin] subnavigation -->
+{% include subnav.html %}
+<!-- [end] subnavigation -->
+
+<!-- [begin] content -->
+{% layout layout: "bootstrap/section" %}
+{% layout layout: "bootstrap/container" %}
+{% layout layout: "bootstrap/row" %}
+
+{% layout layout: "bootstrap/column" cname: "col-md-3 col-xs-12 nopadding" %}
+{% capture imageSrc %}nptechs/{{ page.title | slugify: 'latin' }}.jpg{% endcapture %}
+{% include bootstrap/image.html src=imageSrc  cname='img-responsive' %}
+{% endlayout %}
+
+{% layout layout: "bootstrap/column" cname: "col-md-9 col-xs-12 nopadding" %}
+<div class="profile-info">
+<h1>{{ page.firstname }} {{ page.lastname }}</h1>
+<div class="social">
+{% for social in page.social %}
+<div class="icon">
+  <a class="{{social.type}}" href="{{social.url}}"><i class="fa fa-{{social.type}} fa-fw" title="{{social.type}}"></i></a>
+</div>
+{% endfor %}
+</div>
+<div class="bio">
+  {{ content }}
+</div>
+</div>
+{% endlayout %}
+
+{% endlayout %}
+{% endlayout %}
+{% endlayout %}
+<!-- [end] content -->
+
+<!-- [begin] footer -->
+{% include footer.html %}
+<!-- [end] footer -->
+
+<!-- [begin] global JS -->
+{% include javascript.html %}
+<!-- [end] global JS -->
+</body>
+</html>

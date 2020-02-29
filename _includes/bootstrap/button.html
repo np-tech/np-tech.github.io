@@ -1,0 +1,27 @@
+{% if include.button_type == 'anchor' %}
+<a class="{% if include.cname %} {{ include.cname }} {% endif %}" {% if include.cid %} id="{{ include.cid }}" {% endif %} href="{{ include.link }}" role="button">{{ txt }}</a>
+
+{% elsif include.button_type == "button" %}
+<button class="{% if include.cname %} {{ include.cname }} {% endif %}" {% if include.cid %} id="{{ include.cid }}" {% endif %} type="submit" {% if include.link %} href="{{ include.link }}" {% endif %} >{{ txt }}</button>
+
+{% elsif include.button_type == "input" %}
+<input class="{% if include.cname %} {{ include.cname }} {% endif %}" {% if include.cid %} id="{{ include.cid }}" {% endif %} type="button" value="{{ txt }}">
+
+
+{% elsif include.button_type == "submit" %}
+<input class="{% if include.cname %} {{ include.cname }} {% endif %}" {% if include.cid %} id="{{ include.cid }}" {% endif %} type="submit" value="{{ txt }}">
+
+
+{% else %}
+
+<a class="{% if include.cname %} {{ include.cname }} {% endif %}" {% if include.cid %} id="{{ include.cid }}" {% endif %} href="{{ include.link }}" role="button">{{ txt }}</a>
+
+{% endif %}
+
+
+
+
+
+
+
+

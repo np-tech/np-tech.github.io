@@ -1,0 +1,47 @@
+.profile-card{
+	position: relative;
+    display: flex;
+    flex-direction: column;
+    min-width: 0;
+    word-wrap: break-word;
+    background-color: $profile-card-bg;
+    border: 1px solid $profile-card-border;
+    background-clip: border-box;
+    border-radius: 10px;
+    margin-top:20px;
+    margin-bottom: 20px;
+
+	.profile-body {
+		flex: 1 1 auto;
+	    padding: 1.25rem;
+	    -webkit-box-flex: 1;
+	    -ms-flex: 1 1 auto;
+	    flex: 1 1 auto;
+
+	    .profile-image{
+			float: left !important;
+			padding-right: 20px;
+			max-width: 45%;
+
+			img {
+				max-width: 100%;
+				padding:0;
+			    border-radius: 50%;
+			    border: 1px solid $profile-card-border;
+			    transition: all .2s ease-in-out;
+			}
+		}
+
+	    .profile-text{
+
+	    	h4{
+	    		margin-top: 0;
+	    	}
+	    	p {
+	    		font-size: 13px;
+	    	}
+	    }
+	}
+}
+
+

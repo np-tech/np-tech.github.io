@@ -1,0 +1,13 @@
+# Links to include in menu navigation
+# For external links add external: true
+main-menu:
+  - title: About Us
+    url: /about-us/
+  - title: NPTechs
+    url: /nptechs/
+  - title: Technology
+    url: /technology/
+  - title: Blog
+    url: /blog/
+  - title: Contact Us
+    url: /contact-us/

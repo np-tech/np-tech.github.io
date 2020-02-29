@@ -1,0 +1,25 @@
+{% for item in site.data.menu.main-menu %}
+	{% if item.url == page.url %} 
+		{% if item.sub %}
+		<section class="subnav">
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+						<nav aria-label="breadcrumb">
+				  			<ol class="breadcrumb subnavbreadcrumb text-right">
+							{% for subitem in item.sub %}
+								{% if page.url == "/{{ subitem.url }}" %}
+							  		<li class="breadcrumb-item active" aria-current="page">{{ subitem.title }}</li>
+							  	{% else %}
+							  		<li class="breadcrumb-item"><a href="{{ site.baseurl }}{{ subitem.url }}">{{ subitem.title }}</a></li>
+							  	{%endif %}
+							{% endfor %}
+							</ol>
+						</nav>
+					</div>
+				</div>
+			</div>
+		</section>
+  		{% endif %}
+	{% endif %}
+{% endfor %}

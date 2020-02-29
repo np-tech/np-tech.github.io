@@ -1,0 +1,46 @@
+.navbar-brand{
+	padding:5px 15px 0 15px;
+}
+.navbar-brand.logo img{
+	max-height:40px;
+}
+.navbar-brand.logo h1{
+	margin:2px 0 0 0;
+	font-size: 36px;
+	text-transform: uppercase;
+	color: $black;
+}
+.navbar-brand.logo h1 span{
+	color: $black
+}
+.navbar-default .navbar-nav>li>a{
+	font-family: $font-headers;
+	text-transform:uppercase;
+	font-weight:normal;
+	font-size: 14pt;
+}
+.navbar-default .navbar-nav>li:hover>a.style1{color:$black}
+.navbar-default .navbar-nav>li:hover>a.style2{color:$black}
+.navbar-default .navbar-nav>li:hover>a.style3{color:$black}
+.navbar-default .navbar-nav>li:hover>a.style4{color:$black}
+.navbar-default .navbar-nav>li:hover>a.style5{color:$black}
+.navbar-default .navbar-nav>li:hover>a.style6{color:$black}
+.navbar-default .navbar-nav>li:hover>a.style7{color:$black}
+.navbar-default .navbar-nav>li:hover>a.style8{color:$black}
+.donate-text {
+    background-color: $donate-background;
+    padding: 10px;
+    color: $white;
+}
+
+.navbar {
+	margin-bottom: 0;
+}
+
+
+
+@media (max-width: $mobile) {
+	.navbar-nav {
+    	margin: 0 -15px 7.5px -15px;
+	}
+}
