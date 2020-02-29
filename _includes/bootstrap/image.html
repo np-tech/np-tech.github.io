@@ -1,6 +1,0 @@
-{% if include.cid %}
-{% assign imgId = include.src | remove: ".png" | remove: ".jpg" | remove: ".svg" %}
-{% else %}
-{% assign imgId = include.cid %}
-{% endif %}
-{% asset '{{ include.src }}' id='{{ imgId }}' class='{{ include.cname }}' %}
