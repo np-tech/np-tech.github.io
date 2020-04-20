@@ -326,7 +326,8 @@ label {
 
 /* Authors */
 #header-authors {
-  background-image: url("/img/home-office-336378_1920.jpg");
+  /* background-image: url('/img/home-office-336378_1920.jpg'); */
+  background-image: url("/img/writer-illustrated.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
@@ -386,7 +387,7 @@ label {
 
 /* articles */
 #header-articles {
-  background-image: url("/img/notebook-2672549_1920.jpg");
+  background-image: url("/img/article-illustrated.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
@@ -417,5 +418,11 @@ label {
 .article-box:hover {
   color: #333;
   text-decoration: none;
+}
+
+#footer {
+  background: #333;
+  color: #fff;
+  padding: 40px 0;
 }
 /*# sourceMappingURL=style.css.map */

@@ -4,6 +4,7 @@ $yellow: #fed403;
 $skyblue: rgb(135, 206, 235);
 $skyblue-dark: rgba($skyblue, 0.88);
 $muted: #6c757d;
+$footer: #333;
 body {
     font-family: 'Roboto', sans-serif;
 }
@@ -336,7 +337,8 @@ label {
 /* Authors */
 
 #header-authors {
-    background-image: url('/img/home-office-336378_1920.jpg');
+    /* background-image: url('/img/home-office-336378_1920.jpg'); */
+    background-image: url('/img/writer-illustrated.jpg');
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center center;
@@ -395,7 +397,7 @@ label {
 /* articles */
 
 #header-articles {
-    background-image: url('/img/notebook-2672549_1920.jpg');
+    background-image: url('/img/article-illustrated.jpg');
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center center;
@@ -425,4 +427,10 @@ label {
         color: #333;
         text-decoration: none;
     }
+}
+
+#footer {
+    background: $footer;
+    color: #fff;
+    padding: 40px 0;
 }
