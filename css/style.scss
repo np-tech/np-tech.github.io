@@ -464,11 +464,12 @@ label {
 }
 
 #iom-footer .iom-footer-links li a {
-    color: rgba(255, 255, 255, 0.5);
+    color: $yellow;
     text-decoration: none;
 }
 
 #iom-footer .iom-footer-links li a:hover {
+    color: $yellow;
     text-decoration: underline;
 }
 
