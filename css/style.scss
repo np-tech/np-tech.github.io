@@ -4,7 +4,6 @@ $yellow: #fed403;
 $skyblue: rgb(135, 206, 235);
 $skyblue-dark: rgba($skyblue, 0.88);
 $muted: #6c757d;
-$footer: #333;
 body {
     font-family: 'Roboto', sans-serif;
 }
@@ -23,7 +22,7 @@ h6 {
 }
 
 #hp-banner {
-    background-image: url(../img/keyboard-498396_1920.jpg);
+    background-image: url(../img/keyboard-498396_1920.webp);
     background-size: cover;
     background-repeat: no-repeat;
     background-color: $main-color;
@@ -35,7 +34,7 @@ h6 {
 }
 
 .bg-iom {
-    background: rgba(0, 0, 0, 0.9) !important;
+    background: #000 !important;
 }
 
 .bg-gray {
@@ -327,7 +326,7 @@ label {
 /* About Us */
 
 #header-aboutus {
-    background-image: url('/img/yellow-wallpaper.jpg');
+    background-image: url('/img/yellow-wallpaper.webp');
     background-size: cover;
     background-repeat: repeat;
     background-color: $main-color;
@@ -337,8 +336,7 @@ label {
 /* Authors */
 
 #header-authors {
-    /* background-image: url('/img/home-office-336378_1920.jpg'); */
-    background-image: url('/img/writer-illustrated.jpg');
+    background-image: url('/img/home-office-336378_1920.webp');
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center center;
@@ -397,7 +395,7 @@ label {
 /* articles */
 
 #header-articles {
-    background-image: url('/img/article-illustrated.jpg');
+    background-image: url('/img/notebook-2672549_1920.webp');
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center center;
@@ -413,7 +411,7 @@ label {
 }
 
 #header-join {
-    background-image: url('/img/desktop-3207338_1280.jpg');
+    background-image: url('/img/desktop-3207338_1280.webp');
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center center;
@@ -427,70 +425,4 @@ label {
         color: #333;
         text-decoration: none;
     }
-}
-
-.iom-bg {
-    background: rgba(0, 0, 0, 0.9);
-    -webkit-transition: 0.5s;
-    -o-transition: 0.5s;
-    transition: 0.5s;
-    color: #fff;
-}
-
-#iom-footer {
-    padding: 80px 0;
-    clear: both;
-    display: block;
-}
-
-#iom-footer h3 {
-    margin-bottom: 15px;
-    font-weight: bold;
-    font-size: 15px;
-    letter-spacing: 2px;
-    text-transform: uppercase;
-    color: rgba(255, 255, 255, 0.8);
-}
-
-#iom-footer .iom-footer-links {
-    padding: 0;
-    margin: 0;
-}
-
-#iom-footer .iom-footer-links li {
-    padding: 0;
-    margin: 0;
-    list-style: none;
-}
-
-#iom-footer .iom-footer-links li a {
-    color: $yellow;
-    text-decoration: none;
-}
-
-#iom-footer .iom-footer-links li a:hover {
-    color: $yellow;
-    text-decoration: underline;
-}
-
-#iom-footer .iom-widget {
-    margin-bottom: 30px;
-}
-
-@media screen and (max-width: 768px) {
-    #iom-footer .iom-widget {
-        text-align: left;
-    }
-}
-
-#iom-footer .iom-widget h3 {
-    margin-bottom: 15px;
-    font-weight: bold;
-    font-size: 15px;
-    letter-spacing: 2px;
-    text-transform: uppercase;
-}
-
-#iom-footer .copyright .block {
-    display: block;
 }
