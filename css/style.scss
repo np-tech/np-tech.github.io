@@ -4,6 +4,31 @@ $yellow: #fed403;
 $skyblue: rgb(135, 206, 235);
 $skyblue-dark: rgba($skyblue, 0.88);
 $muted: #6c757d;
+
+/**** MIXIN ***********************************************/
+
+@mixin bg-url($url, $url2x: false, $webp1x: false, $webp2x: false) {
+    background-image: url($url);
+    @if $webp1x {
+        .webp & {
+            background-image: url($webp1x);
+        }
+    }
+    @if $url2x {
+        @media screen and (-webkit-min-device-pixel-ratio: 2), screen and (min-resolution: 192dpi), screen and (min-resolution: 2dppx) {
+            background-image: url($url2x);
+            @if $webp2x {
+                .webp & {
+                    background-image: url($webp2x);
+                }
+            }
+        }
+    }
+}
+
+
+/********************************************************/
+
 body {
     font-family: 'Roboto', sans-serif;
 }
@@ -403,7 +428,7 @@ label {
 }
 
 #header-homepage {
-    background-image: url('/img/social-media-3846597.png');
+    background-image: bg-url('/img/social-media-3846597.png', '', '/img/social-media-3846597.webp', '');
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center center;
@@ -425,4 +450,9 @@ label {
         color: #333;
         text-decoration: none;
     }
+}
+
+.link-standout {
+    color: $main-color;
+    font-weight: bold;
 }

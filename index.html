@@ -12,6 +12,26 @@
     <link href="https://fonts.googleapis.com/css?family=Montserrat|Roboto&display=swap" rel="stylesheet">
     <title>It's Our Mission | A website by Non Profit Techs for Non Profit Techs</title>
     <meta name="Description" content="A website by Non Profit Techs for Non Profit Techs">
+    <script>
+        ! function(e) {
+            "use strict";
+
+            function s(s) {
+                if (s) {
+                    var t = e.documentElement;
+                    t.classList ? t.classList.add("webp") : t.className += " webp", window.sessionStorage.setItem("webpSupport", !0)
+                }
+            }! function(e) {
+                if (window.sessionStorage && window.sessionStorage.getItem("webpSupport")) s(!0);
+                else {
+                    var t = new Image;
+                    t.onload = t.onerror = function() {
+                        e(2 === t.height)
+                    }, t.src = "data:image/webp;base64,UklGRi4AAABXRUJQVlA4TCEAAAAvAUAAEB8wAiMwAgSSNtse/cXjxyCCmrYNWPwmHRH9jwMA"
+                }
+            }(s)
+        }(document);
+    </script>
 </head>
 
 <body>
@@ -70,7 +90,11 @@
                         <span class="d-block font-alt font-w-600 letter-spacing-1 mt-2 text-gray-800 text-extra-small text-uppercase">Richard Chiriboga</span>
                         </span>
                         <!-- //.pr-3 -->
-                        <img src="img/posts/thumbnails/speaking-at-bbcon-chiriboga.webp" alt="" class="img-fluid rounded">
+                        <picture class="img-fluid rounded">
+                            <source srcset="img/posts/thumbnails/speaking-at-bbcon-chiriboga.webp" type="image/webp" class="rounded" alt="">
+                            <source srcset="img/posts/thumbnails/speaking-at-bbcon-chiriboga.jpg" type="image/jpeg" class="rounded" alt="">
+                            <img src="img/posts/thumbnails/speaking-at-bbcon-chiriboga.jpg" alt="" class="rounded">
+                        </picture>
                     </a>
                     <!-- //.align-items-center -->
                 </div>
@@ -83,7 +107,11 @@
                         <span class="d-block font-alt font-w-600 letter-spacing-1 mt-2 text-gray-800 text-extra-small text-uppercase">Richard Chiriboga</span>
                         </span>
                         <!-- //.pr-3 -->
-                        <img src="img/posts/thumbnails/speaking-at-bbcon-chiriboga.webp" alt="" class="img-fluid rounded">
+                        <picture class="img-fluid rounded">
+                            <source srcset="img/posts/thumbnails/speaking-at-bbcon-chiriboga.webp" type="image/webp" class="rounded" alt="">
+                            <source srcset="img/posts/thumbnails/speaking-at-bbcon-chiriboga.jpg" type="image/jpeg" class="rounded" alt="">
+                            <img src="img/posts/thumbnails/speaking-at-bbcon-chiriboga.jpg" alt="" class="rounded">
+                        </picture>
                     </a>
                     <!-- //.align-items-center -->
                 </div>
@@ -96,7 +124,11 @@
                         <span class="d-block font-alt font-w-600 letter-spacing-1 mt-2 text-gray-800 text-extra-small text-uppercase">Richard Chiriboga</span>
                         </span>
                         <!-- //.pr-3 -->
-                        <img src="img/posts/thumbnails/speaking-at-bbcon-chiriboga.webp" alt="" class="img-fluid rounded">
+                        <picture class="img-fluid rounded">
+                            <source srcset="img/posts/thumbnails/speaking-at-bbcon-chiriboga.webp" type="image/webp" class="rounded" alt="">
+                            <source srcset="img/posts/thumbnails/speaking-at-bbcon-chiriboga.jpg" type="image/jpeg" class="rounded" alt="">
+                            <img src="img/posts/thumbnails/speaking-at-bbcon-chiriboga.jpg" alt="" class="rounded">
+                        </picture>
                     </a>
                     <!-- //.align-items-center -->
                 </div>
@@ -113,7 +145,7 @@
                     <h2 class="letter-spacing-2 m-0 text-uppercase title-small">Latest Authors</h2>
                     <span class="d-block letter-spacing-1 mt-2 text-small text-uppercase">You can read, listen and watch some great content</span>
                     <span class="bg-info d-block mt-4 mb-4 mx-auto sep-line-medium-thick-long"></span>
-                    <span class="d-block letter-spacing-1 mt-2 text-small text-uppercase"><a href="authors.html">View All Authors</a></span>
+                    <span class="d-block letter-spacing-1 mt-2 text-medium text-uppercase"><a href="authors.html" class="link-standout">View All Authors</a></span>
                 </div>
                 <!-- //.col-lg-6 -->
             </div>
@@ -122,8 +154,12 @@
                 <div class="col-md-6 col-lg-4">
                     <a href="author-details.html" class="author-box">
                         <figure class="m-0 position-relative mb-4">
-                            <img src="img/authors/richard-chiriboga.webp" alt="" class="img-fluid">
-                            <figcaption class="label label-small bg-web bottom-0 m-3 position-absolute right-0 text-uppercase text-white">Web</figcaption>
+                            <picture>
+                                <source srcset="img/authors/richard-chiriboga.webp" type="image/webp" class="img-fluid" alt="Richard Chiriboga">
+                                <source srcset="img/authors/richard-chiriboga.jpg" type="image/jpeg" class="img-fluid" alt="Richard Chiriboga">
+                                <img src="img/authors/richard-chiriboga.jpg" alt="Richard Chiriboga" class="img-fluid">
+                                <figcaption class="label label-small bg-web bottom-0 m-3 position-absolute right-0 text-uppercase text-white">Creative</figcaption>
+                            </picture>
                         </figure>
                         <span class="py-4 text-center">
                             <span class="d-block font-alt font-w-600 letter-spacing-1 text-small text-uppercase">Richard Chiriboga</span>
@@ -139,9 +175,17 @@
                 <div class="col-md-6 col-lg-4">
                     <a href="author-details.html" class="author-box">
                         <figure class="m-0 position-relative mb-4">
+                            <picture>
+                                <source srcset="img/authors/richard-chiriboga.webp" type="image/webp" class="img-fluid" alt="Richard Chiriboga">
+                                <source srcset="img/authors/richard-chiriboga.jpg" type="image/jpeg" class="img-fluid" alt="Richard Chiriboga">
+                                <img src="img/authors/richard-chiriboga.jpg" alt="Richard Chiriboga" class="img-fluid">
+                                <figcaption class="label label-small bg-creative bottom-0 m-3 position-absolute right-0 text-uppercase text-white">Creative</figcaption>
+                            </picture>
+                        </figure>
+                        <!-- <figure class="m-0 position-relative mb-4">
                             <img src="img/authors/richard-chiriboga.webp" alt="" class="img-fluid">
                             <figcaption class="label label-small bg-creative bottom-0 m-3 position-absolute right-0 text-uppercase text-white">Creative</figcaption>
-                        </figure>
+                        </figure> -->
                         <span class="py-4 text-center mt-3">
                             <span class="d-block font-alt font-w-600 letter-spacing-1 text-small text-uppercase">Debbie Design</span>
                         <span class="d-block font-alt font-w-600 letter-spacing-1 text-gray-800 text-extra-small text-uppercase">Web Designer</span>
@@ -155,8 +199,12 @@
                 <div class="col-md-6 col-lg-4">
                     <a href="author-details.html" class="author-box">
                         <figure class="m-0 position-relative mb-4">
-                            <img src="img/authors/richard-chiriboga.webp" alt="" class="img-fluid">
-                            <figcaption class="label label-small bg-marketing bottom-0 m-3 position-absolute right-0 text-uppercase text-white">Marketing</figcaption>
+                            <picture>
+                                <source srcset="img/authors/richard-chiriboga.webp" type="image/webp" class="img-fluid" alt="Richard Chiriboga">
+                                <source srcset="img/authors/richard-chiriboga.jpg" type="image/jpeg" class="img-fluid" alt="Richard Chiriboga">
+                                <img src="img/authors/richard-chiriboga.jpg" alt="Richard Chiriboga" class="img-fluid">
+                                <figcaption class="label label-small bg-marketing bottom-0 m-3 position-absolute right-0 text-uppercase text-white">Marketing</figcaption>
+                            </picture>
                         </figure>
                         <span class="py-4 text-center">
                         <span class="d-block font-alt font-w-600 letter-spacing-1 text-small text-uppercase">Joe Smith</span>
