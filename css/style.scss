@@ -47,7 +47,10 @@ h6 {
 }
 
 #hp-banner {
-    background-image: bg-url('/img/keyboard-498396_1920.jpg', '/img/keyboard-498396_1920.jpg', '/img/keyboard-498396_1920.webp', '/img/keyboard-498396_1920.webp');
+    @include bg-url('/img/keyboard-498396_1920.jpg',
+    '/img/keyboard-498396_1920.jpg',
+    '/img/keyboard-498396_1920.webp',
+    '/img/keyboard-498396_1920.webp');
     background-size: cover;
     background-repeat: no-repeat;
     background-color: $main-color;
@@ -351,7 +354,10 @@ label {
 /* About Us */
 
 #header-aboutus {
-    background-image: bg-url('/img/yellow-wallpaper.jpg', '/img/yellow-wallpaper.jpg', '/img/yellow-wallpaper.webp', '/img/yellow-wallpaper.webp');
+    @include bg-url('/img/yellow-wallpaper.jpg',
+    '/img/yellow-wallpaper.jpg',
+    '/img/yellow-wallpaper.webp',
+    '/img/yellow-wallpaper.webp');
     background-size: cover;
     background-repeat: repeat;
     background-color: $main-color;
@@ -361,7 +367,10 @@ label {
 /* Authors */
 
 #header-authors {
-    background-image: bg-url('/img/home-office-336378_1920.jpg', '/img/home-office-336378_1920.jpg', '/img/home-office-336378_1920.webp', '/img/home-office-336378_1920.webp');
+    @include bg-url('/img/home-office-336378_1920.jpg',
+    '/img/home-office-336378_1920.jpg',
+    '/img/home-office-336378_1920.webp',
+    '/img/home-office-336378_1920.webp');
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center center;
@@ -420,7 +429,10 @@ label {
 /* articles */
 
 #header-articles {
-    background-image: bg-url('/img/notebook-2672549_1920.jpg', '/img/notebook-2672549_1920.jpg', '/img/notebook-2672549_1920.webp', '/img/notebook-2672549_1920.webp');
+    @include bg-url('/img/notebook-2672549_1920.jpg',
+    '/img/notebook-2672549_1920.jpg',
+    '/img/notebook-2672549_1920.webp',
+    '/img/notebook-2672549_1920.webp');
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center center;
@@ -428,7 +440,10 @@ label {
 }
 
 #header-homepage {
-    background-image: bg-url('/img/social-media-3846597.png', '/img/social-media-3846597.png', '/img/social-media-3846597.webp', '/img/social-media-3846597.webp');
+    @include bg-url('/img/social-media-3846597.png',
+    '/img/social-media-3846597.png',
+    '/img/social-media-3846597.webp',
+    '/img/social-media-3846597.webp');
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center center;
@@ -436,7 +451,10 @@ label {
 }
 
 #header-join {
-    background-image: bg-url('/img/desktop-3207338_1280.jpg', '/img/desktop-3207338_1280.jpg', '/img/desktop-3207338_1280.webp', '/img/desktop-3207338_1280.webp');
+    @include bg-url('/img/desktop-3207338_1280.jpg',
+    '/img/desktop-3207338_1280.jpg',
+    '/img/desktop-3207338_1280.webp',
+    '/img/desktop-3207338_1280.webp');
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center center;
