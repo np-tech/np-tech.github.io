@@ -354,7 +354,7 @@ label {
 
 /* Authors */
 #header-authors {
-  background-image: url("/img/home-office-336378_1920.jpg");
+  background-image: url("/img/writer-illustrated.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
@@ -362,15 +362,15 @@ label {
 }
 
 .webp #header-authors {
-  background-image: url("/img/home-office-336378_1920.webp");
+  background-image: url("/img/writer-illustrated.webp");
 }
 
 @media screen and (-webkit-min-device-pixel-ratio: 2), screen and (min-resolution: 192dpi), screen and (min-resolution: 2dppx) {
   #header-authors {
-    background-image: url("/img/home-office-336378_1920.jpg");
+    background-image: url("/img/writer-illustrated.jpg");
   }
   .webp #header-authors {
-    background-image: url("/img/home-office-336378_1920.webp");
+    background-image: url("/img/writer-illustrated.webp");
   }
 }
 
@@ -427,7 +427,7 @@ label {
 
 /* articles */
 #header-articles {
-  background-image: url("/img/notebook-2672549_1920.jpg");
+  background-image: url("/img/article-wallpaper.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
@@ -435,15 +435,15 @@ label {
 }
 
 .webp #header-articles {
-  background-image: url("/img/notebook-2672549_1920.webp");
+  background-image: url("/img/article-wallpaper.webp");
 }
 
 @media screen and (-webkit-min-device-pixel-ratio: 2), screen and (min-resolution: 192dpi), screen and (min-resolution: 2dppx) {
   #header-articles {
-    background-image: url("/img/notebook-2672549_1920.jpg");
+    background-image: url("/img/article-wallpaper.jpg");
   }
   .webp #header-articles {
-    background-image: url("/img/notebook-2672549_1920.webp");
+    background-image: url("/img/article-wallpaper.webp");
   }
 }
 
